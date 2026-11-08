@@ -14,7 +14,7 @@ et n'agit que sur cette seule chaîne, qui est la sienne. Aucune autre personne 
 
 <h2>Utilisation des services d'API YouTube</h2>
 <p>Studio Elgoz utilise les services d'API YouTube (YouTube API Services) pour envoyer et programmer les vidéos de la chaîne,
-poser leur miniature, leurs sous-titres, les ajouter à une playlist, publier un commentaire de l'auteur et lire les
+poser leur miniature, leurs sous-titres, les ajouter à une playlist, publier un commentaire de l'auteur, répondre aux commentaires publiés sous ses vidéos et lire les
 statistiques de la chaîne. En utilisant Studio Elgoz, vous acceptez les
 <a href="https://www.youtube.com/t/terms">Conditions d'utilisation de YouTube</a>. Les données sont aussi traitées selon les
 <a href="https://policies.google.com/privacy">Règles de confidentialité de Google</a>.</p>
@@ -26,12 +26,19 @@ serveur dédié, dans un fichier lisible par le seul compte de service de l'outi
 <li><strong>Données de la chaîne elle-même</strong> : ses vidéos, leurs métadonnées et ses statistiques, lues uniquement pour
 publier et suivre les vidéos de la chaîne.</li>
 </ul>
-<p>Studio Elgoz ne collecte, ne stocke et ne traite <strong>aucune donnée de tiers</strong> : ni donnée de spectateurs, ni
-donnée d'autres chaînes ou d'autres utilisateurs de Google. Aucune donnée n'est vendue, partagée ou utilisée à des fins
-publicitaires. Aucun cookie n'est déposé par l'outil.</p>
+<ul>
+<li><strong>Commentaires publics publiés sous les vidéos de la chaîne</strong> (texte et nom d'affichage public), lus pour y
+répondre au nom de la chaîne. Pour proposer une réponse, ce texte est transmis à un modèle d'IA (API Claude d'Anthropic) ; les
+réponses sensibles sont relues par le responsable, et un récapitulatif est envoyé à la boîte de la chaîne. L'outil garde la liste
+des identifiants des commentaires déjà traités ; le texte d'un commentaire peut figurer dans les journaux techniques du serveur et
+dans ce récapitulatif.</li>
+</ul>
+<p>En dehors de ces commentaires publics, Studio Elgoz ne collecte <strong>aucune donnée de spectateurs</strong>, ni donnée
+d'autres chaînes ou d'autres utilisateurs de Google. Aucune donnée n'est vendue, utilisée pour du profilage ou à des fins
+publicitaires, ni partagée au-delà de ce qui est décrit ici. Aucun cookie n'est déposé par l'outil.</p>
 
 <h2>Conservation et suppression</h2>
-<p>Le jeton est conservé tant que l'outil sert à publier la chaîne. L'accès peut être révoqué à tout moment depuis
+<p>Le jeton est conservé tant que l'outil sert à publier la chaîne ; les données décrites ci-dessus sont supprimées sur simple demande au contact ci-dessous. L'accès peut être révoqué à tout moment depuis
 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ; le jeton cesse alors de fonctionner et
 il est supprimé du serveur. Toute demande de suppression peut aussi être adressée au contact ci-dessous.</p>
 
@@ -50,7 +57,7 @@ this single channel, which is his own. No one else signs in to it.</p>
 
 <h2>Use of YouTube API Services</h2>
 <p>Studio Elgoz uses YouTube API Services to upload and schedule the channel's videos, set their thumbnails and captions,
-add them to a playlist, post an author comment and read the channel's statistics. By using Studio Elgoz, you agree to be
+add them to a playlist, post an author comment, reply to comments posted under its videos and read the channel's statistics. By using Studio Elgoz, you agree to be
 bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Data is also handled under the
 <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
@@ -61,11 +68,18 @@ server, in a file readable only by the tool's service account, and is never shar
 <li><strong>The channel's own data</strong>: its videos, their metadata and its statistics, read only to publish and monitor the
 channel's videos.</li>
 </ul>
-<p>Studio Elgoz does not collect, store or process <strong>any third-party data</strong>: no viewer data, and no data from other
-channels or other Google users. No data is sold, shared or used for advertising. The tool sets no cookies.</p>
+<ul>
+<li><strong>Public comments posted under the channel's videos</strong> (text and public display name), read in order to reply
+to them on behalf of the channel. To draft a reply, the text is sent to an AI model (Anthropic's Claude API); sensitive replies
+are reviewed by the owner, and a summary is sent to the channel's mailbox. The tool keeps the list of IDs of comments already
+handled; a comment's text may appear in the server's technical logs and in that summary.</li>
+</ul>
+<p>Apart from these public comments, Studio Elgoz collects <strong>no viewer data</strong>, and no data from other channels or
+other Google users. No data is sold, used for profiling or advertising, or shared beyond what is described here. The tool sets
+no cookies.</p>
 
 <h2>Retention and deletion</h2>
-<p>The token is kept for as long as the tool is used to publish the channel. Access can be revoked at any time at
+<p>The token is kept for as long as the tool is used to publish the channel; the data described above is deleted on request to the contact below. Access can be revoked at any time at
 <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>; the token then stops working and is
 deleted from the server. Deletion requests can also be sent to the contact below.</p>
 
